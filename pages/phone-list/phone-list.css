@@ -1,0 +1,8 @@
+.stockchart .chart {
+    height: 400px;
+    padding: 20px;
+}
+
+.stockchart h2 {
+    text-align: center;
+}

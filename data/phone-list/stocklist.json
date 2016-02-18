@@ -1,0 +1,53 @@
+[
+  {
+    "id": "0P0000RZ3F",
+    "name": "BlackRock Global Funds - Global Allocation Fund A2 USD (EUR)",
+    "isin": "LU0171283459"
+  },
+  {
+    "id": "0P0000VHO6",
+    "name": "BlackRock Global Funds - World Healthscience Fund A2 USD (EUR)",
+    "isin": "LU0171307068"
+  },
+  {
+    "id": "F0GBR04F90",
+    "name": "Carmignac Patrimoine A EUR Acc",
+    "isin": "LU0171307068"
+  },
+  {
+    "id": "F00000NAG9",
+    "name": "Henderson Horizon Fund - Global Technology Fund A2 EUR Acc",
+    "isin": "LU0572952280"
+  },
+  {
+    "id": "F0GBR04K6R",
+    "name": "Invesco Funds - Invesco Pan European Structured Equity Fund A Acc",
+    "isin": "LU0119750205"
+  },
+  {
+    "id": "F0GBR04PDC",
+    "name": "Petercam Securities Real Estate Europe B",
+    "isin": "BE0058187841"
+  },
+  {
+    "id": "F0000000LF",
+    "name": "Pictet-Security P EUR",
+    "isin": "LU0270904781"
+  },
+  {
+    "id": "F0GBR04AVQ",
+    "name": "Robeco Asia Pacific Equities D EUR",
+    "isin": "LU0084617165"
+  },
+  {
+    "id": "F0GBR05VCE",
+    "name": "Robeco BP Global Premium Eqs D EUR",
+    "isin": "LU0203975437"
+  },
+  {
+    "id": "F0GBR04NYJ",
+    "name": "Threadneedle Investment Funds - Threadneedle European Smaller Companies Retail Net EUR Acc",
+    "isin": "GB0002771383"
+  }
+]
+
