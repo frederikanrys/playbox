@@ -1,0 +1,23 @@
+.stock-section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.stockchart {
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 0px 0px 50px 0px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 10px;
+}
+
+.stockchart .chart {
+    height: 400px;
+    padding: 20px;
+}
+
+.stockchart h2 {
+    text-align: center;
+    height: 25px;
+    font-size: 16px;
+}
