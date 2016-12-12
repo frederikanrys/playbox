@@ -21,7 +21,7 @@ angular.module('playboxApp', [
         templateUrl: 'pages/text/text.html',
         controller: 'TextController'
     }).otherwise({
-        redirectTo: '/phone'
+        redirectTo: '/text'
     });
 
 }]).run(function () {

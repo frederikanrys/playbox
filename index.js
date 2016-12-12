@@ -5,7 +5,7 @@ var express = require('express');
 var httpProxy = require('http-proxy');
 
 
-var server = express();
+server = express();
 server.set('port', 3000);
 
 // Serve static directory where our angular app is located.

@@ -1,0 +1,115 @@
+body {
+    width: 768px;
+    margin: 15px auto;
+    font-family: Arial, "MS Trebuchet", sans-serif;
+}
+
+p {
+    margin: 0 0 20px 0;
+}
+
+p, li {
+    line-height: 20px;
+}
+
+header#page_header {
+    width: 100%;
+}
+
+footer#page_footer {
+    clear: both;
+    width: 100%;
+    display: block;
+    text-align: center;
+
+}
+
+header#page_header nav ul, footer#page_footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header#page_header nav li, footer#page_footer nav li {
+    display: inline;
+    margin: 0 20px 0 0;
+}
+
+section#posts {
+    float: left;
+    width: 75%;
+}
+
+section#posts aside {
+    float: right;
+    width: 35%;
+    margin-left: 5%;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+section#sidebar {
+    float: right;
+    width: 25%;
+}
+
+
+/* form css */
+
+fieldset {
+    width: 216px;
+}
+
+fieldset ol {
+    list-style: none;
+    padding: 0;
+    margin: 2px;
+}
+
+fieldset ol li {
+    margin: 0 0 9px 0;
+    padding: 0;
+}
+
+/* Make inputs go to their own line */
+fieldset input {
+    display: block;
+}
+
+fieldset input {
+    width: 100%;
+}
+
+fieldset input#description {
+    height: 50px;
+}
+/* table.html */ 
+table{
+    width: 600px;
+    border-collapse: collapse;
+}
+th, td{
+    border: none;
+}
+
+th {
+    color: white;
+    background-color: black;
+}
+
+tr:nth-of-type(even){
+    background-color: #F3F3F3;
+}
+tr:nth-of-type(odd) {
+    background-color:#ddd;
+}
+
+tr:last-child td:last-child{
+    font-size:24px;
+}
+td:last-child{
+    font-weight: bolder;
+}
+td:nth-child(n+2){
+    text-align: right;
+}

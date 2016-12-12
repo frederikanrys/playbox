@@ -35,13 +35,6 @@ angular.module('playboxDirectives').directive('stock',['$timeout',
                                     valueField: "value",
                                     useDataSetColors: false
                                 }],
-
-
-                                stockLegend: {
-                                    valueTextRegular: " ",
-                                    markerType: "none"
-                                },
-
                                 drawingIconsEnabled: true
                             }],
 
@@ -100,7 +93,7 @@ angular.module('playboxDirectives').directive('stock',['$timeout',
             scope: {
                 stock: '='
             },
-            template: '<div class="stockchart"><h2>{{stock.name}}</h2><div id={{stock.id}} class="chart"></div></div>>',
+            template: '<div class="stockchart"><h2>{{stock.name}}</h2><div id={{stock.id}} class="chart"></div></div>',
             link: link
         };
     }
