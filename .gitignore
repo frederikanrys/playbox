@@ -9,6 +9,7 @@
 *.iws
 *.ipr
 *.log
+.idea/
 .idea/*
 target/
 release.properties
