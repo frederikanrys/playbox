@@ -1,30 +1,31 @@
-angular.module('playboxDirectives').directive('header', function() {
+angular.module('playboxModule').directive('header', function() {
 	
 	return {
 		restrict : 'A',
-		scope : {},
 		templateUrl : "components/header/header.html",
-		controller : ['$scope', '$location', function ($scope, $location){
+        bindToController: true,
+		controller : ['$scope', '$state', 'playboxConstants', function ($scope, $state, playboxConstants){
+
 			$scope.name = "header";
 
-			$scope.apps = [{
-				name: "Text app",
-				description: "A simple app manipulating text",
-				url: "/text"
+            $scope.apps = [{
+				name: "First",
+				description: "First screen",
+				id: playboxConstants.FIRST
 			},
 			{
-				name: "Phone app",
-				description: "A stupid app displaying some data",
-				url: "/phone"
+				name: "Second",
+				description: "Second screen",
+				id: playboxConstants.SECOND
 			}];
 
-			$scope.switchApp = function(name){
-	     		$location.path(name);
+            $scope.switchApp = function(id){
+	     		$state.go(id);
 	     	};
 
-			$scope.isActive = function(path){
-	     		return $location.path() === path;
-	     	};
+            $scope.isActive = function(id){
+	     		return $state.current === id;
+	     	}
 
 		}]
 	}

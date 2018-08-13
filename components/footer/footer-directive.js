@@ -1,4 +1,4 @@
-angular.module('playboxDirectives').directive('footer', function() {
+angular.module('playboxModule').directive('footer', function() {
 	
 	return {
 		restrict : 'A',

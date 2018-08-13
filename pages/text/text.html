@@ -1,35 +1,13 @@
 
 <div class="container">
+
 		<div class="row">
             <div class="col-xs-12 col-lg-12">
-              <h2>Text functionality</h2>
+              <h2>Screen 1</h2>
               <p>{{data.text}}</p>
               <input type="text" ng-model="inputData">
               <button ng-click="sayHello(inputData)">Change Text</button>
             </div><!--/.col-xs-6.col-lg-4-->
-
-            <div class="col-xs-12 col-lg-12">
-              <h2>ICalender functionality</h2>            
-              <button ng-click="downLoad()">Add to Agenda</button>
-            </div><!--/.col-xs-6.col-lg-4-->
-
-            <div class="col-xs-12 col-lg-12">
-              <h2>Form field calculations - The angular way</h2>
-              <input type="number" ng-model="field1" min="1" max="5">
-              <input type="number" ng-model="field2" min="1" max="5">
-              <input type="text" ng-model="field3" >
-
-              <p>the result of the calculations : {{field1 + field2 + (field3| num)}}</p>
-            </div><!--/.col-xs-6.col-lg-4-->
-
-            <div class="col-xs-12 col-lg-12">
-              <h2>Form field calculations - The non-angular way</h2>
-              <input type="number" id="field1" value="12">
-              <input type="number" id="field2" value="1">
-
-              <div id="result"></div>
-              
-            </div>
         </div><!--/row-->
 
     </div>

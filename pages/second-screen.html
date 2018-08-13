@@ -1,0 +1,44 @@
+<div class="container" data-ng-init="secondScreenCtrl.init()">
+
+
+    <div class="row">
+        <div class="col-xs-12 col-lg-12">
+            <h2>Front end list filtering ({{secondScreenCtrl.data.length}} records)
+            </h2>
+        </div><!--/.col-xs-6.col-lg-4-->
+    </div><!--/row-->
+
+
+
+    <div class="input-group">
+        <span class="input-group-addon">
+            <span class="glyphicon glyphicon-filter"></span>
+        </span>
+        <input type="text" ng-model="secondScreenCtrl.filter" class="form-control" placeholder="filter" ng-change="secondScreenCtrl.filterChanged()"/>
+    </div>
+
+
+    <!-- this is the grid -->
+    <wj-flex-grid items-source="secondScreenCtrl.cvFilter">
+    </wj-flex-grid>
+
+    ​
+    <div class="btn-group">
+        <button type="button" class="btn" ng-click="secondScreenCtrl.cvFilter.moveToFirstPage()">
+            <span class="glyphicon glyphicon-fast-backward"></span>
+        </button>
+        <button type="button" class="btn" ng-click="secondScreenCtrl.cvFilter.moveToPreviousPage()">
+            <span class="glyphicon glyphicon-step-backward"></span>
+        </button>
+        <button type="button" class="btn" disabled style="width:100px">
+            {{secondScreenCtrl.cvFilter.pageIndex + 1 | number}} / {{secondScreenCtrl.cvFilter.pageCount | number}}
+        </button>
+        <button type="button" class="btn" ng-click="secondScreenCtrl.cvFilter.moveToNextPage()">
+            <span class="glyphicon glyphicon-step-forward"></span>
+        </button>
+        <button type="button" class="btn" ng-click="secondScreenCtrl.cvFilter.moveToLastPage()">
+            <span class="glyphicon glyphicon-fast-forward"></span>
+        </button>
+    </div>
+</div>
+

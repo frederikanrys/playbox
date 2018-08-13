@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="playboxApp">
+<html lang="en" ng-app="playboxModule">
 <head>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +11,7 @@
 	<link rel="stylesheet" href="app.css">
 
 	<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
-	<script type="text/javascript" src="node_modules/angular-route/angular-route.min.js"></script>
-	<script type="text/javascript" src="node_modules/ical.js/build/ical.js"></script>
+    <script type="text/javascript" src="node_modules/@uirouter/angularjs/release/angular-ui-router.min.js"></script>
     <script type="text/javascript" src="app.js"></script>
     <script type="text/javascript" src="app-controller.js"></script>
 
@@ -20,30 +19,44 @@
 	<script type="text/javascript" src="components/header/header-directive.js"></script>
 	<script type="text/javascript" src="components/footer/footer-directive.js"></script>
 
-	<!-- pages -->
-    <script type="text/javascript" src="pages/text/text-controller.js"></script>
-    <script type="text/javascript" src="pages/text/text-filter.js"></script>
-    <script type="text/javascript" src="pages/text/parser.js"></script>
+    <!-- providers -->
+    <script type="text/javascript" src="providers/appStateProvider.js"></script>
 
-    
+    <!-- controllers -->
+    <script type="text/javascript" src="controllers/firstScreenController.js"></script>
+    <script type="text/javascript" src="controllers/secondScreenController.js"></script>
+
+    <!-- constants -->
+    <script type="text/javascript" src="constants/playboxConstants.js"></script>
+
+    <!-- services -->
+    <script type="text/javascript" src="services/mockDataService.js"></script>
+
     <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
     <script src="https://www.amcharts.com/lib/3/serial.js"></script>
     <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
     <script src="https://www.amcharts.com/lib/3/amstock.js"></script>
-    
-    <script type="text/javascript" src="pages/phone-list/phone-list-controller.js"></script>
-    <script type="text/javascript" src="pages/phone-list/phone-list-service.js"></script>
-    <script type="text/javascript" src="pages/phone-list/phone-list-directive.js"></script>
+
+    <!-- Wijmo -->
+    <script src="vendor/wijmo.min.js"></script>
+    <script src="vendor/wijmo.grid.min.js"></script>
+    <script src="vendor/wijmo.input.min.js"></script>
+    <script src="vendor/wijmo.nav.min.js"></script>
+    <script src="vendor/wijmo.angular.min.js"></script>
+    <link rel="stylesheet" href="vendor/wijmo.min.css" />
+
 
     <link rel="stylesheet" href="pages/phone-list/phone-list.css" />
 
 
 </head>
-<body ng-controller="AppController">
+
+<body data-ng-controller="appController as ctrl"
+      data-ng-init="ctrl.init()">
 
 	<div header></div>
 
-	<div ng-view></div>
+	<div ui-view></div>
 
 	<div footer></div>
 
